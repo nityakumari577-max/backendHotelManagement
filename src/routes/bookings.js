@@ -9,7 +9,7 @@ const {
   deleteBooking,
 } = require('../../controllers/bookingController');
 
-const { protect, adminOnly } = require('../middleware/auth');
+const { protect, adminOnly } = require('../../middleware/auth');
 
 // ── Public Routes (no login needed) ──────────────────────
 router.get('/guest/:email',         getBookingsByEmail);// View by email
