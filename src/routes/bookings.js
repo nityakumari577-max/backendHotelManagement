@@ -12,9 +12,9 @@ const {
 const { protect, adminOnly } = require('../middleware/auth');
 
 // ── Public Routes (no login needed) ──────────────────────
+router.get('/guest/:email',         getBookingsByEmail);// View by email
 router.post('/',                    createBooking);       // Make a booking
-router.get('/:id',                  getBookingById);      // View a booking
-router.get('/guest/:email',         getBookingsByEmail);  // View by email
+router.get('/:id',                  getBookingById);      // View a booking 
 router.put('/:id/cancel',           cancelBooking);       // Cancel a booking
 
 // ── Admin Routes (JWT protected) ─────────────────────────
