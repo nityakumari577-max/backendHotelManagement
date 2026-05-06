@@ -7,7 +7,7 @@ const {
   cancelBooking,
   getAllBookings,
   deleteBooking,
-} = require('../controllers/bookingController');
+} = require('../../controllers/bookingController');
 
 const { protect, adminOnly } = require('../middleware/auth');
 
