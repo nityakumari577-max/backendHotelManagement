@@ -22,7 +22,7 @@ router.get('/',          protect, adminOnly, getAllBookings);   // All bookings
 router.delete('/:id',   protect, adminOnly, deleteBooking);    // Delete booking
 
 module.exports = router;
-console.log({
+console.log("DEBUG CONTROLLERS:", {
   createBooking,
   getBookingById,
   getBookingsByEmail,
